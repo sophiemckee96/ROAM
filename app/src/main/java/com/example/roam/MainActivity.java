@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+// THIS IS A CHANGE
+
 public class MainActivity extends AppCompatActivity {
     EditText etEmail, etPassword;
     Button btnSignup;
