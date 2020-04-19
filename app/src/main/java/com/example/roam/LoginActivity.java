@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
                 FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
                 if(mFirebaseUser !=null){
                     Toast.makeText(LoginActivity.this,"You are logged in",Toast.LENGTH_SHORT).show();
-                    Intent i = new Intent(LoginActivity.this, Homescreen.class);
+                    Intent i = new Intent(LoginActivity.this, HomescreenActivity.class);
                     startActivity(i);
                 }
                 else{
@@ -75,15 +75,15 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(LoginActivity.this,"Login Error, please try again",Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                Intent intToHome = new Intent(LoginActivity.this,Homescreen.class);
+                                Intent intToHome = new Intent(LoginActivity.this,HomescreenActivity.class);
                                 startActivity(intToHome);
                             }
                         }
                     });
-            }
-            else{
-                Toast.makeText(LoginActivity.this,"Error Occurred",Toast.LENGTH_SHORT).show();
-            }
+                }
+                else{
+                    Toast.makeText(LoginActivity.this,"Error Occurred",Toast.LENGTH_SHORT).show();
+                }
 
             }
         });

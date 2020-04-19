@@ -4,28 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Homescreen">
+    android:orientation="vertical"
+    tools:context=".HomescreenActivity">
 
     <TextView
-        android:id="@+id/tvMessage"
+        android:id="@+id/tv_topSpots"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You are logged in! - homescreen activity"
-        android:textSize="32dp"
+        android:text="TOP SPOTS"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Log Out"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729" />
+        app:layout_constraintVertical_bias="0.044" />
+
+    <ImageView
+        android:id="@+id/imgbtn_budapest"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topSpots"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/budapest"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        />
+
+    <ImageView
+        android:id="@+id/imgbtn_edinburgh"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topSpots"
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/edinburgh"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        />
+
+    <ImageView
+        android:id="@+id/imgbtn_krakow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topSpots"
+        app:layout_constraintVertical_bias="0.464"
+        app:srcCompat="@drawable/krakow"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        />
+
+    <ImageView
+        android:id="@+id/imgbtn_lauterbrunnen"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topSpots"
+        app:layout_constraintVertical_bias="0.464"
+        app:srcCompat="@drawable/lauterbrunnen"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        />
+
+    <ImageView
+        android:id="@+id/imgbtn_lisbon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topSpots"
+        app:layout_constraintVertical_bias="0.901"
+        app:srcCompat="@drawable/lisbon"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        />
+
+    <ImageView
+        android:id="@+id/imgbtn_tallinn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_topSpots"
+        app:layout_constraintVertical_bias="0.898"
+        app:srcCompat="@drawable/tallinn"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
