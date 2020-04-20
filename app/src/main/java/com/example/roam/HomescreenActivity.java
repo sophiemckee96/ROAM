@@ -4,6 +4,7 @@ package com.example.roam;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -11,67 +12,52 @@ import android.widget.Toast;
 
 public class HomescreenActivity extends AppCompatActivity {
 
-    ImageView lisbonButton;
-    ImageView tallinnButton;
-    ImageView budapestButton;
-    ImageView edinburghButton;
-    ImageView krakowButton;
-    ImageView lauterbrunnenButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_homescreen);
 
-        lisbonButton = findViewById(R.id.imgbtn_lisbon);
+        ImageView lisbonButton = (ImageView) findViewById(R.id.imgbtn_lisbon);
         lisbonButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(HomescreenActivity.this, "clicked", Toast.LENGTH_LONG).show();
-
                 Intent lisbon = new Intent(HomescreenActivity.this, LisbonActivity.class);
                 startActivity(lisbon);
-            }
+            }//lisbon activity
         });
 
-        lauterbrunnenButton = findViewById(R.id.imgbtn_lauterbrunnen);
-
+        ImageView lauterbrunnenButton = (ImageView) findViewById(R.id.imgbtn_lauterbrunnen);
         lauterbrunnenButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(HomescreenActivity.this, "clicked", Toast.LENGTH_LONG).show();
-
                 Intent lauterbrunnen = new Intent(HomescreenActivity.this, LauterbrunnenActivity.class);
                 startActivity(lauterbrunnen);
             }
         });
 
-        krakowButton = findViewById(R.id.imgbtn_krakow);
-
+        ImageView krakowButton = (ImageView) findViewById(R.id.imgbtn_krakow);
         krakowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(HomescreenActivity.this, "clicked", Toast.LENGTH_LONG).show();
-
                 Intent krakow = new Intent(HomescreenActivity.this, KrakowActivity.class);
                 startActivity(krakow);
             }
         });
 
-        tallinnButton = findViewById(R.id.imgbtn_tallinn);
-
+        ImageView tallinnButton = (ImageView) findViewById(R.id.imgbtn_tallinn);
         tallinnButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(HomescreenActivity.this, "clicked", Toast.LENGTH_LONG).show();
-
                 Intent tallinn = new Intent(HomescreenActivity.this, TallinnActivity.class);
                 startActivity(tallinn);
             }
         });
 
-        budapestButton = findViewById(R.id.imgbtn_budapest);
-
+        ImageView budapestButton = (ImageView) findViewById(R.id.imgbtn_budapest);
         budapestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,8 +68,7 @@ public class HomescreenActivity extends AppCompatActivity {
             }
         });
 
-        edinburghButton = findViewById(R.id.imgbtn_edinburgh);
-
+       ImageView edinburghButton = (ImageView) findViewById(R.id.imgbtn_edinburgh);
         edinburghButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

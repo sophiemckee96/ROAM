@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class LoginActivity extends AppCompatActivity {
     EditText etEmail, etPassword;
     Button btnLogin;
-    TextView tvCreateAccount;
+    TextView tvSignup;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -30,10 +30,18 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
-        etEmail = findViewById(R.id.etEmail);
-        etPassword = findViewById(R.id.etPassword);
-        btnLogin = findViewById(R.id.btnLogin);
-        tvCreateAccount = findViewById(R.id.tvCreateAccount);
+        etEmail = findViewById(R.id.editTextEmail);
+        etPassword = findViewById(R.id.editTextPassword);
+        btnLogin = findViewById(R.id.buttonSignin);
+
+        tvSignup = findViewById(R.id.tvSignup);
+        tvSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View view){
+                Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(i);
+            }
+        });
 
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
 
@@ -87,15 +95,10 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-        tvCreateAccount.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intSignUp = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intSignUp);
-            }
-        });
+
 
     }
+
     @Override
     protected void onStart(){
         super.onStart();

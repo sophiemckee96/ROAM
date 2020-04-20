@@ -7,10 +7,69 @@
     tools:context=".EdinburghActivity">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_edinburghTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="this is the edinburgh activity"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="236dp" />
+        android:text="EDINBURGH"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/tv_edinburghSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here's what other nomads think about Edinburgh!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edinburghTitle"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <Button
+        android:id="@+id/btn_rateEdinburgh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="DISPLAY AVERAGE RATINGS HERE"
+        app:layout_constraintBottom_toTopOf="@+id/btn_rateEdinburgh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edinburghSubtitle" />
+
+    <TextView
+        android:id="@+id/tv_rateEdinburgh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have you been to Edinburgh? Click below to rate it!"
+        app:layout_constraintBottom_toTopOf="@+id/btn_rateEdinburgh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_edinburghSubtitle"
+        app:srcCompat="@drawable/edinburgh" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

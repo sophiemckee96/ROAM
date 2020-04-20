@@ -11,20 +11,20 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RateBudapestActivity extends AppCompatActivity {
+public class RateEdinburghActivity extends AppCompatActivity {
 
     @TargetApi(Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rate_budapest);
+        setContentView(R.layout.activity_rate_edinburgh);
         Button getRating = findViewById(R.id.getRating);
         final RatingBar ratingBar = findViewById(R.id.ratingBar);
         getRating.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String rating = "Rating is :" + ratingBar.getRating();
-                Toast.makeText(RateBudapestActivity.this, rating, Toast.LENGTH_LONG).show();
+                Toast.makeText(RateEdinburghActivity.this, rating, Toast.LENGTH_LONG).show();
             }
         });
 
